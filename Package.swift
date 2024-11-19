@@ -49,5 +49,15 @@ let package:Package = .init(
             dependencies: [
                 .target(name: "JSON"),
             ]),
+
+        .testTarget(name: "JSONStressTestST",
+            dependencies: [
+                .target(name: "JSON"),
+            ]),
+
+        .executableTarget(name: "JSONStressTest",
+            dependencies: [
+                .target(name: "JSON"),
+            ]),
     ]
 )
